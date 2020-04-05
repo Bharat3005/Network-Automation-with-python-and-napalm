@@ -1,0 +1,119 @@
+Core-SW-1
+en
+config t
+Hostname Core-SW-1
+ip domain-name ccie-labs.com
+crypto key generate rsa  
+2048
+enable password Nyk@@123#
+int vlan 1
+ip add 192.168.122.100 255.255.255.0
+no sh 
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4 
+login local
+transport input ssh
+do wr
+
+SW-2 
+en
+config t
+Hostname Core-SW-2
+ip domain-name ccie-labs.com
+crypto key generate rsa
+2048
+enable password Nyk@@123#
+int vlan 1
+ip address 192.168.122.101 255.255.255.0
+no sh
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4
+login local
+transport input ssh
+do wr
+
+
+SW-1
+en
+config t
+Hostname SW-1
+ip domain-name ccie-labs.com
+crypto key generate rsa
+2048
+enable password Nyk@@123#
+int vlan 1
+ip address 192.168.122.102 255.255.255.0
+no sh
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4
+login local
+transport input ssh
+do wr
+
+SW-2
+en
+config t
+Hostname SW-2
+ip domain-name ccie-labs.com
+crypto key generate rsa
+2048
+enable password Nyk@@123#
+int vlan 1
+ip address 192.168.122.103 255.255.255.0
+no sh
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4
+login local
+transport input ssh
+do wr
+
+SW-3
+en
+config t
+Hostname SW-3
+ip domain-name ccie-labs.com
+crypto key generate rsa
+2048
+enable password Nyk@@123#
+int vlan 1
+ip address 192.168.122.104 255.255.255.0
+no sh
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4
+login local
+transport input ssh
+do wr
+
+SW-4
+en
+config t
+Hostname SW-4
+ip domain-name ccie-labs.com
+crypto key generate rsa
+2048
+enable password Nyk@@123#
+int vlan 1
+ip address 192.168.122.105 255.255.255.0
+no sh
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4
+login local
+transport input ssh
+do wr
+
+SW-5
+en
+config t
+Hostname SW-5
+ip domain-name ccie-labs.com
+crypto key generate rsa
+2048
+enable password Nyk@@123#
+int vlan 1
+ip address 192.168.122.106 255.255.255.0
+no sh
+username Bharat pri 15 password Nyk@@123#
+line vty 0 4
+login local
+transport input ssh
+do wr

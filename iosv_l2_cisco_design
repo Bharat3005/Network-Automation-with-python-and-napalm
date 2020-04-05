@@ -1,0 +1,8 @@
+int r gig 1/0-3
+switchport trunk encap dot1q
+switchport mode trunk 
+int r gig 2/0-3
+switchport trunk encap dot1q
+switchport mode trunk 
+int r gig 3/0
+switchport mode access
